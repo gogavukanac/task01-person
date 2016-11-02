@@ -13,3 +13,10 @@ bootstrap/cache/
 
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
+
+# IDE
+*.sublime-*
+
+# logs, dumps, etc.
+moja-lista.json
+test.json
