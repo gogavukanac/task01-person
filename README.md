@@ -9,3 +9,9 @@ Practice PHP
 - array manipulation
 - CRUD on simple example
 - foreach
+
+
+## Tasks
+
+[docs/tasks.md](docs/tasks.md)
+
