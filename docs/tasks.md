@@ -41,4 +41,4 @@ Print The List with function -> print_r
 C)
 
 Again print list by using `foreach`,
-and printing every user last and first name -  one line per user.
+and printing everyuser last and first name -  one line per user

@@ -4,8 +4,15 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 $myNumbers = [3, 5, 7];
-var_dump($myNumbers);
-print_r($myNumbers);	
+// var_dump($myNumbers);
+// print_r($myNumbers);
+
+foreach ($myNumbers as $key => $value) {
+	// echo $item . PHP_EOL;
+	echo 'key: '. $key . ', value: ' . $value . PHP_EOL;
+}
+
+
 $myWords = ['Ruma','Beograd'];
 print_r($myWords);
 // array_push($myNumbers, 9);
@@ -31,8 +38,17 @@ $personTwo = [
 	'last'   => 'Tesla',
 	'email'  => 'nikola@tesla.com',
 ];
+foreach ($personOne as $key => $value) {
+	// echo $item . PHP_EOL;
+	echo 'key: '. $key . ', value: ' . $value . PHP_EOL;
+}
+
 $myList[] = $personOne;
 $myList[] = $personTwo;
+foreach ($myList as $key => $value) {
+	// echo $item . PHP_EOL;
+	echo 'key: '. $key . ', value: ' . var_dump($value) . PHP_EOL;
+}
 print_r($myList);
 $jsonString = json_encode($myList);
 echo $jsonString;

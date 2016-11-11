@@ -1,4 +1,7 @@
 <?php
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
 echo '<pre>';
 $email = $_POST["email"];
 $psw   = $_POST["psw"];
@@ -6,7 +9,7 @@ $psw   = $_POST["psw"];
 
 $personThree = [
 	'email'		=> $email,
-	'password'	=> $psw
+	'password'	=> $pw
 ];
 
 $content = file_get_contents("moja-lista.json");
