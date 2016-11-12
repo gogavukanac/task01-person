@@ -1,4 +1,5 @@
 <?php
+	echo "<pre>";
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
@@ -29,15 +30,17 @@ PHP_EOL;
 
 function stampajListu($listPerson) {
       foreach ($listPerson as $one) {
-      	echo $one . PHP_EOL;
+      	echo $one['first'] .' ' . $one['last'] . PHP_EOL;
       }
-};
-stampajListu($personOne);
-stampajListu($personTwo);
-stampajListu($personThree);
+}
+stampajListu($listPerson);
 
-//print_r($osobe2d);['adresa']['ulica']
-//$target = $osobe2d[4]['adresa']['ulica'];
-//print_r($target);
-
-
+function stampajListu1(array $listPerson)
+{
+	foreach($listPerson as $person) {
+		// ako je $person tipa Object od klase Person
+		echo $person->ime . ' ' . $person->prezime . PHP_EOL;
+		// ako je $person tipa Array tj. niz sa indeksima (keys): ime, prezime,...
+		echo $person['ime'] . ' ' . $person['$prezime'] . PHP_EOL;
+	}
+}

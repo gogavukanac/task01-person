@@ -50,10 +50,10 @@ $osobaArB = [
 "ime" => 'Goga2',
 'prezime' => 'Vukanac2'
 ];
-$osobe2d = [4 => $osobaArA, $osobaArB];
+$osobe2d = [$osobaArA, $osobaArB];
 
 print_r($osobe2d);
-$target = $osobe2d[4]['adresa']['ulica'];
+$target = $osobe2d[0]['adresa']['ulica'];
 print_r($target);
 
 // echo PHP_EOL.PHP_EOL;
